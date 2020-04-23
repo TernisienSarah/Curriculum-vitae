@@ -1,0 +1,148 @@
+html, body
+{ 
+width:auto;
+margin:auto;
+font-family:'EB Garamond','Roboto Condensed','Times New Roman', 'arial', 'sans-serif';
+}    
+#page {
+ width:70%;
+ margin:auto;
+   font-size:1em;
+   border-style:solid;
+   border-color:#FAFAFA;
+   font-family:'EB Garamond','Roboto Condensed','Times New Roman', 'arial', 'sans-serif';
+   display: flex;/* rendre flexible mes elements*/
+   flex-wrap:wrap;/* forcer le retour a la ligne*/
+   
+
+}
+header{
+   display:none ;/* non visible pour l'utilisateur*/
+}
+aside {
+   display: flex;/* rendre flexible mes elements*/
+   flex:1;/*ma partie aside est 2 fois moins large que ma partie main*/
+   flex-direction: column;/* distribution verticale*/
+   background-color:#FDD835;
+   text-align: center;/* pour centrer mon img*/
+}
+main {
+display:flex;/* rendre flexible mes elements*/
+   flex:2;/*ma partie main est 2 fois plus large que ma partie aside*/
+   flex-direction: column;/* distribution verticale*/
+
+}
+
+h3 {
+   background-color:#424242;
+   font-weight: bold;/* elements en gras*/
+   font-size: 1.2em;
+   color:#FDD835;
+}
+#adresse{
+        text-align:left; /* aligner mon adresse a gauche*/
+        margin-left:5%;/* marge gauche */
+
+}
+
+#intro {
+   text-align: justify;
+   flex:1;
+   margin: 5%;
+}
+img {
+   width: 150PX;
+   border-style: solid;
+   border-color:#FDD835;
+   border-radius: 100px;/* arrondir la bordure de mon image*/
+}
+#emoticone{
+    display:flex;/* rendre flexible mes elements*/
+    justify-content:space-around;/*laisser de l'espace entre eux et aux extremités du conteneur*/
+    margin:5%;/*laisser une marge de 5% autour de mon conteneur*/
+   
+}
+.fa-running, .fa-music,.fa-basketball-ball{
+  font-size:1.7em;
+    border-style: solid;
+    color:#424242;
+    border-color:#424242;
+    border-radius:100%;
+    padding:1VH;/* marge entre bordure et emoticone*/
+
+}
+.nom{
+  Margin-top:5%;/*marge haute*/
+  margin-bottom:5%;/*marge basse*/
+
+}
+h1{
+font-size:1.9em;
+margin:0;/* marge entre mon titre H1 et paragraphe*/
+}
+.nom p{
+  margin:0;/* marge entre mon titre H1 et paragraphe*/
+  font-size:1.6em;
+}
+.prenom{
+  color:#FDD835;
+}
+.souligne{
+text-decoration:underline #FDD835;/* soulignement d'une partie du paragraphe*/
+}
+section {
+display:flex;
+flex-direction:column;
+margin-left:5%;/* espace entre main et section */
+margin-bottom:5%;
+
+}
+H2{
+font-size: 1.2em;
+margin-bottom:5%;/* marge entre mes titres H2 et mes listes d'expériences*/
+ border-bottom:2PX solid #FFEB3B;/* soulignement du titre sur la totalité du block*/
+padding-bottom:2%;/* espaces entre mes titres et mes soulignements*/
+
+
+}
+.emoticone-titre{
+     margin-right:5%;/* espace entre icones et titre H2*/
+}
+.fa-graduation-cap, .fa-briefcase,  .fa-pencil-alt{
+  color:#FDD835
+}
+
+.fa-dot-circle-o,.fa-circle
+{
+ color:#FDD835;
+}
+.liste{
+  display:flex; /* rendre flexible mes elements*/
+}
+.gauche{
+flex:1;
+font-weight:bold;
+margin-left:2%;/* espace entre puces et date*/
+
+}
+.droite{
+flex:2;/* ma partie droite prend 2 fois plus d'espace que la gauche*/
+margin-left:5%;/* espacer mes elements droite et gauche dans mes listes*/
+
+}
+span{
+   font-weight: bold;
+}
+.contact{
+   display:flex;
+   justify-content:space-between;
+}
+@media (max-width: 770px) { /* largeur max 770 PX*/
+   #page{
+width:100%;/* ma page prend tout l'espace de l'ecran*/
+flex-direction:column;/*distribuer mes elements en colonne */
+}
+   .contact{
+     flex-direction:column;   /*distribution en verticale*/    
+  }
+}
